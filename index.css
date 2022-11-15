@@ -1,6 +1,6 @@
 body{
-    font-family: monospace;
-    background-color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-image: url("background.jpg");
 }
 
 h1{
@@ -12,6 +12,57 @@ h2{
     color: darkmagenta;
 }
 
-.contact{
-    background-image: url("images\photo de profil.jpg");
+/* version téléphone et tablette */
+@media (max-width: 991px) {
+    /* informations */
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    /* photo de profil */
+    .photo{
+        margin-top: 1rem;
+        border-radius: 10px;
+        border-color: black;
+        width: 15rem;
+
+    }
+    .photo img{
+        border-radius: 9px;
+    }
+
+    .photo .card{
+        background-color: black;
+        border-radius: 10px;
+    }
+    
+    /* contact */
+    .contact{
+        width: 15rem;
+        margin-top: 1rem;
+    }
+
+    .contact button{
+        background-color: blueviolet;
+        border-color: blueviolet;
+        justify-content: center;
+        margin-bottom: 2px;
+        margin-top: 2px;
+    }
+    .contact a{
+        text-decoration: none;
+    }
+    .contact .card{
+        background-color: gainsboro;
+        text-align: center;
+    }
+}
+
+/* version ordinateur */
+@media (min-width: 992px) {
+
+    body{
+        background-image: url("photo de profil.jpg");
+    }
 }

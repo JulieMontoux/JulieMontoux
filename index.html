@@ -1,87 +1,34 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <title>Julie Montoux</title>
-</head>
-<body>
-    <!-- navbar -->
-    <nav class="navbar navbar-dark navbar-expand-lg bg-dark fixed-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Julie Montoux</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-                <div class="offcanvas-header">
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <link rel="stylesheet" href="index.css">
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="photo">
+                <div class="card">
+                    <img src="profil.jpg" class="card-img-top">
                 </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">A propos de moi</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#card">Contact</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Parcours professionnel
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu-dark">
-                                <li><a class="dropdown-item" href="#">Formations professionnelles</a></li>
-                                <li><a class="dropdown-item" href="#">Expériences professionnelles</a></li>
-                                <li>
-                                <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Langages</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <div class="justify-content-end" style="display: inline;">
-                        <a href="https://www.instagram.com/montoux_julie_/"><img src="images/instagram.jpg" style="width:35px; border-radius: 10px; margin-left: 2px;"></a>
-                        <a href="https://www.facebook.com/Julie.myx.montoux"><img src="images/facebook.jpg" style="width:35px; border-radius: 10px; margin-left: 2px;"></a>
-                        <a href="https://twitter.com/MontouxJulie"><img src="images/twitter.jpg" style="width:35px; border-radius: 10px; margin-left: 2px;"></a>
-                        <a href="https://www.linkedin.com/in/julie-montoux-569392225/"><img src="images/linkedin.jpg" style="width:35px; border-radius: 10px; margin-left: 2px;"></a>
-                    </div>
+            </div>
+            <div class="contact">
+                <div class="card">
+                    <h4>Julie Montoux</h4>
+                    <h4>06 71 23 36 45</h4>
+                    <h4>julie.montoux@epsi.fr</h4>
+                    <a href="CVJulieMontoux.pdf" download="CVJulieMontoux">
+                        <div class="gap-2 d-md-flex justify-content-md-center">
+                            <button class="btn btn-primary" onclick="window.open('CVJulieMontoux.pdf')">Télécharger mon CV!</button>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
-    </nav>
-    <div class="fixed-position">
-        <!-- A propos de moi -->
-        <p>Je suis une étudiante énergique, 
-            souriante et perfectionniste, toujours 
-            à l'affut de nouvelles connaissances. 
-            Réfléchie et visionnaire, j'ai souvent 
-            des idées qui sortent de 
-            l'ordinaire. J'ai énormément de
-            facilité à travailler en groupe 
-            et je m'investis pleinement. </p>
-        <!-- Contact -->
-        <div class="contact">
-            <div class="card" id="card" style="margin-top: 4rem; width: 25%; margin-left: 2px;">
-                <div class="card-body">
-                    <h5 class="card-title">Contact</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">0671233645</h6>
-                    <h6 class="card-subtitle mb-2 text-muted">julie.montoux@epsi.fr</h6>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Parcours professionnel -->
-    <div class="">
-        <!-- Formations professionnelles -->
-        <!-- Expériences professionnelles -->
-    </div>
-    <!-- Footer -->
-    <footer>
-        <p>I'm a belle gosse!</p>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
 </html>
