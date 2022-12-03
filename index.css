@@ -1,6 +1,6 @@
 body{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-image: url("background.jpg");
+    font-family: Arial, serif;
+    background-color: whitesmoke;
 }
 
 h1{
@@ -15,10 +15,11 @@ h2{
 /* version téléphone et tablette */
 @media (max-width: 991px) {
     /* informations */
-    .container{
+    .presentation{
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-top: 4rem;
     }
     /* photo de profil */
     .photo{
@@ -44,10 +45,8 @@ h2{
     }
 
     .contact button{
-        background-color: blueviolet;
-        border-color: blueviolet;
         justify-content: center;
-        margin-bottom: 2px;
+        margin-bottom: 5px;
         margin-top: 2px;
     }
     .contact a{
@@ -57,12 +56,100 @@ h2{
         background-color: gainsboro;
         text-align: center;
     }
+    .contact h3{
+        font-weight:bold;
+        color: darkmagenta;
+    }
+    .contact h4{
+        font-size: medium;
+    }
+    .reseaux img{
+        border-radius: 10px;
+        width: 3em;
+        margin-bottom: 5px;
+    }
+
+    /* experience */
+    .parcours{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 4rem;
+    }
+
+    .experience{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 15rem;
+        margin-top: 1em;
+    }
 }
 
 /* version ordinateur */
 @media (min-width: 992px) {
 
-    body{
-        background-image: url("photo de profil.jpg");
+    .presentation{
+        display: flex;
+        margin-top: 2rem;
+        justify-content: center;
     }
+
+    .photo{
+        width: 20%;
+        margin-right: 3rem;
+    }
+    .photo img{
+        border-radius: 9px;
+    }
+
+    .photo .card{
+        background-color: black;
+        border-radius: 10px;
+    }
+
+    .contact{
+        width: 20%;
+    }
+    .contact button{
+        justify-content: center;
+        margin-bottom: 5px;
+        margin-top: 2px;
+    }
+    .contact a{
+        text-decoration: none;
+    }
+    .contact .card{
+        text-align: center;
+    }
+    .contact h3{
+        font-weight:bold;
+        color: darkmagenta;
+    }
+    .contact h4{
+        font-size: medium;
+    }
+    .reseaux img{
+        border-radius: 10px;
+        width: 3em;
+        margin-bottom: 5px;
+    }
+
+    .parcours{
+        align-items: center;
+        margin-top: 2rem;
+    }
+    .parcours h3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: darkmagenta;
+    }
+
+    .experience{
+        width: 80%;
+        margin-left: 10%;
+    }
+
+
 }
